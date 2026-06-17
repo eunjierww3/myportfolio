@@ -1,3 +1,18 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+  body{
+   background-color: #f5f7fb;
+   color: #222;
+   line-height: 1.6;
+  }
+
+
 nav {
  background-color: #ffffff;
  border-bottom:1px solid #e5e7ed;
@@ -5,7 +20,13 @@ nav {
  display: flex;
  justify-content: space-between;
  align-items: center;
+ position: fixed;
+ width: 100%;
+ top: 0;
+ left: 0;
+ z-index: 1000;
 }
+
 
  nav ul {
     list-style: none;
@@ -36,6 +57,7 @@ background: linear-gradient(90deg, rgba(140, 152, 255, 1) 0%, rgba(126, 54, 227,
   color: white;
   padding: 100px 20px;
   text-align: center;
+  animation: fadeUp 3s ease;
 }
 
 .small-title {
@@ -85,12 +107,6 @@ background: linear-gradient(90deg, rgba(140, 152, 255, 1) 0%, rgba(126, 54, 227,
     color: #1e2a78;
   }
 
-  body{
-   background-color: #f5f7fb;
-   color: #222;
-   line-height: 1.6;
-  }
-
   section{
    background-color: white;
    width:1000px;
@@ -136,7 +152,13 @@ background: linear-gradient(90deg, rgba(140, 152, 255, 1) 0%, rgba(126, 54, 227,
   border: 1px solid #ececec;
   border-radius: 18px;
   padding: 20px;
+  transition: box-shadow 0.3s, transform 0.3s;
 
+  }
+
+  .card:hover{
+   transform: translate(0,-8px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
   }
 
   .card h3{
@@ -206,5 +228,23 @@ background: linear-gradient(90deg, rgba(140, 152, 255, 1) 0%, rgba(126, 54, 227,
    font-size: 16px;
    border: none;
    padding: 14px 24px;
+   transition: background-color 0.3s, transform 0.3s;
 
   }
+
+    .contact-form input[type="submit"]:hover{
+      background-color: #7c3aed;
+      transform: translate(0, -4px);
+    }
+
+    @keyframes gadeup {
+      from{
+         opacity: 0;
+         transform: translate(0, 25px);
+      }
+      to{
+         opacity: 1;
+         transform: translate(0,0);
+
+      }
+    }
