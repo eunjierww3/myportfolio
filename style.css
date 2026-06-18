@@ -7,14 +7,14 @@
 }
 
   body{
-   background-color: #f5f7fb;
-   color: #222;
+   background-color: #f6f1eb;
+   color: #ffffff;
    line-height: 1.6;
   }
 
 
 nav {
- background-color: #ffffff;
+ background-color: #363060;
  border-bottom:1px solid #e5e7ed;
  padding: 18px 40px;
  display: flex;
@@ -36,25 +36,25 @@ nav {
 
 nav ul li a{
     text-decoration: none;
-    color: #333;
+    color: #b29bcd;
     font-weight: bold;
     }
 
 nav ul li a:hover{
-      color:#7c3aed;
+      color:#8f7bb3;
     }
 
 .logo {
-      font-size: 20px;
+      font-size: 25px;
       font-weight: bold;
-      color:#1e2a78;
+      color:#aeb4d5;
 
     }
     
 .hero {
   background: #8c98ff;
-background: linear-gradient(90deg, rgba(140, 152, 255, 1) 0%, rgba(126, 54, 227, 1) 50%, rgba(13, 13, 15, 1) 100%);
-  color: white;
+background:background: #020024;
+background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(58, 58, 102, 1) 24%, rgba(245, 230, 188, 1) 100%);
   padding: 100px 20px;
   text-align: center;
   animation: fadeUp 3s ease;
